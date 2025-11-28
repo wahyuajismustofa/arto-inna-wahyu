@@ -27,6 +27,11 @@
   <link href="https://ik.imagekit.io/mustofa/web/seller/logo/favicon-artoprinting.png" rel="icon" type="image/png"/>
   <script crossorigin="anonymous" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js">
   </script>
+    <script>
+        let url = new URL(window.location.href);
+        let param = url.searchParams.get("to");
+        window.namaTamu = decodeURIComponent(param.replace(/\+/g, " "));
+    </script> 
   <title>
    Inna &amp; Wahyu
   </title>
@@ -93,7 +98,7 @@
       <br/>
       Bapak/Ibu/Saudara/i
       <br/>
-      <span class="data-nama">
+      <span class="data-nama"><script>document.write(window.namaTamu)</script>
       </span>
      </p>
      <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
@@ -439,7 +444,7 @@
       <br>
       26 Desember 2025
       <br>
-      09:00 WIB
+      13:00 WIB
       <br>
       <span style="font-size: medium;">
         Bertempat di Kediaman Mempelai Wanita
